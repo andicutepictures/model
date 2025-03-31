@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Lora-Bold';
+    src: url('/fonts/Lora-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora-Regular';
+    src: url('/fonts/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora-Medium';
+    src: url('/fonts/Lora-Medium.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 3em;
+}
+
+
+.container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    height: fit-content;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+    margin-bottom: 3em;
+}
+
+.header-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h1{
+    font-size: 4em;
+    font-family: 'Lora-Bold';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+a{
+    all: unset;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+
+p, a{
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
+    text-align: center;
+}
+
+
+
+h2{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'Lora-Regular';
+    letter-spacing: 0.4em;
+    text-align: center;
+}
+
+
+.photo-gallery{
+    display: flex;
+    gap: 1.5em;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    height: fit-content;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact{
+    margin-top: 3em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    .photo-gallery{
+        flex-direction: column;
+    }
+
+    body{
+        margin: 1.5em;
+    }
+
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3em;
+        margin-bottom: 1.5em;
+    }
+
+    .contact{
+        margin-top: 1.5em;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    h2{
+        text-transform: uppercase;
+        font-size: 1.7em;
+        font-family: 'Lora-Regular';
+        letter-spacing: 0.4em;
+        text-align: center;
+    }
+}
+
+
+
